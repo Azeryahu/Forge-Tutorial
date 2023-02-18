@@ -1,6 +1,8 @@
 package net.azeryahu.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.azeryahu.tutorialmod.item.ModCreativeModeTabs;
+import net.azeryahu.tutorialmod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -37,6 +39,8 @@ public class TutorialMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -51,7 +55,16 @@ public class TutorialMod
 
     private void addCreative(CreativeModeTabEvent.BuildContents event)
     {
-
+        if(event.getTab() == CreativeModeTabs.INGREDIENTS)
+        {
+            event.accept(ModItems.BLACK_OPAL);
+            event.accept(ModItems.RAW_BLACK_OPAL);
+        }
+        if(event.getTab() == ModCreativeModeTabs.TUTORIAL_TAB)
+        {
+            event.accept(ModItems.BLACK_OPAL);
+            event.accept(ModItems.RAW_BLACK_OPAL);
+        }
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
