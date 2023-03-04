@@ -62,11 +62,15 @@ public class TutorialMod
         {
             event.accept(ModItems.BLACK_OPAL);
             event.accept(ModItems.RAW_BLACK_OPAL);
+            event.accept(ModItems.CITRINE);
+            event.accept(ModItems.RAW_CITRINE);
         }
 
         if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS)
         {
             event.accept(ModBlocks.BLACK_OPAL_BLOCK);
+            event.accept(ModBlocks.CITRINE_BLOCK);
+            event.accept(ModBlocks.RAW_CITRINE_BLOCK);
         }
         if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS)
         {
@@ -74,18 +78,33 @@ public class TutorialMod
             event.accept(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE);
             event.accept(ModBlocks.NETHERRACK_BLACK_OPAL_ORE);
             event.accept(ModBlocks.ENDSTONE_BLACK_OPAL_ORE);
+            event.accept(ModBlocks.RAW_CITRINE_BLOCK);
+            event.accept(ModBlocks.CITRINE_ORE);
+            event.accept(ModBlocks.DEEPSLATE_CITRINE_ORE);
+            event.accept(ModBlocks.NETHERRACK_CITRINE_ORE);
+            event.accept(ModBlocks.ENDSTONE_CITRINE_ORE);
         }
 
         if(event.getTab() == ModCreativeModeTabs.TUTORIAL_TAB)
         {
             event.accept(ModItems.BLACK_OPAL);
             event.accept(ModItems.RAW_BLACK_OPAL);
+            event.accept(ModItems.CITRINE);
+            event.accept(ModItems.RAW_CITRINE);
 
             event.accept(ModBlocks.BLACK_OPAL_BLOCK);
+            event.accept(ModBlocks.CITRINE_BLOCK);
+            event.accept(ModBlocks.RAW_CITRINE_BLOCK);
+
             event.accept(ModBlocks.BLACK_OPAL_ORE);
             event.accept(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE);
             event.accept(ModBlocks.NETHERRACK_BLACK_OPAL_ORE);
             event.accept(ModBlocks.ENDSTONE_BLACK_OPAL_ORE);
+            event.accept(ModBlocks.CITRINE_ORE);
+            event.accept(ModBlocks.DEEPSLATE_CITRINE_ORE);
+            event.accept(ModBlocks.NETHERRACK_CITRINE_ORE);
+            event.accept(ModBlocks.ENDSTONE_CITRINE_ORE);
+
         }
     }
 

@@ -23,6 +23,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> BLACK_OPAL_BLOCK = registerBlock("black_opal_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(6F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CITRINE_BLOCK = registerBlock("citrine_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(6F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> RAW_CITRINE_BLOCK = registerBlock("raw_citrine_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(6F).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> BLACK_OPAL_ORE = registerBlock("black_opal_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
@@ -36,6 +42,18 @@ public class ModBlocks {
     public static final RegistryObject<Block> ENDSTONE_BLACK_OPAL_ORE = registerBlock("endstone_black_opal_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(9F).requiresCorrectToolForDrops(), UniformInt.of(2,5)));
+    public static final RegistryObject<Block> CITRINE_ORE = registerBlock("citrine_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(4F).requiresCorrectToolForDrops(), UniformInt.of(2,5)));
+    public static final RegistryObject<Block> DEEPSLATE_CITRINE_ORE = registerBlock("deepslate_citrine_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(5F).requiresCorrectToolForDrops(), UniformInt.of(2,5)));
+    public static final RegistryObject<Block> NETHERRACK_CITRINE_ORE = registerBlock("netherrack_citrine_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3F).requiresCorrectToolForDrops(), UniformInt.of(2,5)));
+    public static final RegistryObject<Block> ENDSTONE_CITRINE_ORE = registerBlock("endstone_citrine_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6F).requiresCorrectToolForDrops(), UniformInt.of(2,5)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {

@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:black_opal_ore",
+    "tutorialmod:black_opal_block",
+    "tutorialmod:deepslate_black_opal_ore",
+    "tutorialmod:netherrack_black_opal_ore",
+    "tutorialmod:endstone_black_opal_ore",
+    "tutorialmod:citrine_ore",
+    "tutorialmod:citrine_block",
+    "tutorialmod:raw_citrine_block",
+    "tutorialmod:deepslate_citrine_block",
+    "tutorialmod:netherrack_citrine_block",
+    "tutorialmod:endstone_citrine_block"
+  ]
+}
